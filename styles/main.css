@@ -2442,6 +2442,20 @@ body.modal-open { overflow: hidden; }
     border-width: 0;
 }
 
+.gallery-modal.places-modal .gallery-modal-content {
+    background: linear-gradient(135deg, rgba(40, 40, 60, 0.95), rgba(20, 20, 30, 0.95));
+}
+
+.gallery-modal.places-modal .gallery-item {
+    border: 2px solid #6c757d;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-modal.places-modal .gallery-item:hover {
+    border-color: #f8f9fa;
+    transform: translateY(-5px) scale(1.03);
+}
+
 /* ============================================
    APP MODALS: Read Me & Message Envelope
    ============================================ */

@@ -433,6 +433,22 @@ function initGalleryModal() {
                 { name: 'Historic Alley – San Miguel de Allende, Mexico', file: 'Nature13.jpg' }
             ]
         },
+        places: {
+            title: 'Sacred Architecture',
+            folder: 'assets/cathedral/france',
+            items: [
+                { name: 'Notre-Dame de Paris', file: 'Notre-Dame de Paris – Paris.jpg' },
+                { name: 'Chartres Cathedral', file: 'Chartres Cathedral – Chartres.jpg' },
+                { name: 'Amiens Cathedral', file: 'Amiens Cathedral – Amiens.jpg' },
+                { name: 'Reims Cathedral', file: 'Reims Cathedral – Reims.jpg' },
+                { name: 'Strasbourg Cathedral', file: 'Strasbourg Cathedral – Strasbourg (Alsace).jpg' },
+                { name: 'Beauvais Cathedral', file: 'Beauvais Cathedral – Beauvais (tallest Gothic choir ever built).jpg' },
+                { name: 'Bourges Cathedral', file: 'Bourges Cathedral – Bourges.jpg' },
+                { name: 'Rouen Cathedral', file: 'Rouen Cathedral – Rouen.jpg' },
+                { name: 'Laon Cathedral', file: 'Laon Cathedral – Laon.jpg' },
+                { name: 'Saint-Denis Basilica', file: 'Saint-Denis Basilica – near Paris (first truly Gothic building).jpg' }
+            ]
+        },
         cinema: {
             title: 'Horror Films Collection',
             folder: 'assets/horrorFilms',
@@ -512,6 +528,8 @@ function initGalleryModal() {
             modal.classList.add('travel-modal');
         } else if (hobbyType === 'music') {
             modal.classList.add('music-modal');
+        } else if (hobbyType === 'places') {
+            modal.classList.add('places-modal');
         }
         
         // Create gallery items with staggered animation
