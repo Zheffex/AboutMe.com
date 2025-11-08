@@ -768,7 +768,10 @@ function initAppModals() {
     const envelope = document.getElementById('envelope');
 
     const openModal = (modal) => {
-        if (modal) modal.setAttribute('aria-hidden', 'false');
+        if (modal) {
+            modal.setAttribute('aria-hidden', 'false');
+            document.body.classList.add('modal-open');
+        }
     };
     const closeModal = (modal) => {
         if (modal) {
@@ -776,6 +779,12 @@ function initAppModals() {
             if (modal === messageModal && envelope) {
                 envelope.classList.remove('open');
             }
+        }
+
+        // Remove modal-open class if no modals remain open
+        const anyOpen = [readModal, messageModal].some(m => m && m.getAttribute('aria-hidden') === 'false');
+        if (!anyOpen) {
+            document.body.classList.remove('modal-open');
         }
     };
 

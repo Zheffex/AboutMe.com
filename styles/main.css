@@ -135,6 +135,10 @@ a:hover {
     z-index: 1001;
 }
 
+/* When a modal is open, hide floating controls and prevent background scroll */
+body.modal-open { overflow: hidden; }
+.modal-open .music-controls { opacity: 0; pointer-events: none; }
+
 .music-btn {
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -2272,16 +2276,16 @@ a:hover {
     .hobbies,
     .addiction,
     .places {
-        padding: 4rem 0;
+        padding: 3.5rem 0;
     }
 
     .car-slider-container {
-        gap: 2rem;
+        gap: 1.5rem;
         max-width: 100%;
     }
 
     .car-slider-wrapper {
-        height: 350px;
+        height: 320px;
         max-width: 100%;
     }
 
@@ -2303,6 +2307,17 @@ a:hover {
     .car-overlay-text {
         font-size: clamp(2rem, 5vw, 4rem);
     }
+    /* Title and description sizing for balanced proportions */
+    .car-main-title {
+        font-size: clamp(1.75rem, 6.5vw, 2.5rem);
+        line-height: 1.15;
+    }
+    .car-main-description {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        max-width: 48ch;
+        margin-inline: auto;
+    }
 
     .car-nav-arrow {
         width: 44px;
@@ -2317,9 +2332,22 @@ a:hover {
         right: 0.5rem;
     }
 
+    .car-thumbnails {
+        justify-content: center;
+        gap: 0.75rem;
+    }
     .car-thumb {
-        width: 70px;
-        height: 70px;
+        width: 64px;
+        height: 64px;
+    }
+    /* Buttons: make them even and aligned */
+    .car-action-buttons {
+        width: 100%;
+        justify-content: center;
+    }
+    .car-action-buttons .car-btn {
+        flex: 1 1 45%;
+        min-width: 0;
     }
 
     .social-links {
@@ -2378,6 +2406,24 @@ a:hover {
     .places-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+    }
+    /* Smaller phones: tighter slider and stacked buttons */
+    .car-slider-wrapper {
+        height: 280px;
+    }
+    .car-thumbnails {
+        gap: 0.5rem;
+    }
+    .car-thumb {
+        width: 56px;
+        height: 56px;
+    }
+    .car-action-buttons {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    .car-action-buttons .car-btn {
+        width: 100%;
     }
 }
 
@@ -2562,8 +2608,9 @@ a:hover {
    Expandable Card Component
    ============================================ */
 .expand-card {
-  width: min(900px, 95vw);
-  margin: 20px auto 0;
+  width: min(550px, 95vw);
+  height: auto;
+  margin: 20px ;
   background: linear-gradient(135deg, rgba(29,31,37,0.95), rgba(22,24,28,0.95));
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 16px;
@@ -2606,6 +2653,7 @@ a:hover {
 .expand-content::-webkit-scrollbar-thumb:hover { background: rgba(59,130,246,0.55); }
 
 .expand-inner {
+    margin-top: 20px;
   padding: 0 20px 20px;
   color: #d6dae3;
   line-height: 1.7;
