@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Diary - A journey through life, passions, and experiences">
+    <title>Personal Diary | My Story</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="bg-music" autoplay loop muted>
+        <source src="assets/song/I'll Take You There Choir - Like a Prayer (Choir Version From Deadpool & Wolverine).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <!-- Music Controls -->
+    <div class="music-controls">
+        <button id="music-toggle" class="music-btn">
+            <i class="music-icon fas fa-music" aria-hidden="true"></i>
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">DIARY</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#hobbies" class="nav-link">Hobbies</a></li>
+                <li><a href="#addiction" class="nav-link">Addiction</a></li>
+                <li><a href="#places" class="nav-link">Places</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">MY</span>
+                    <span class="title-line">STORY</span>
+                </h1>
+                <p class="hero-subtitle">A Personal Journey</p>
+                <div class="hero-divider"></div>
+                <p class="hero-description">
+                    Welcome to my personal diary, where moments become memories
+                </p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">01</span>
+                <span class="title-text">ABOUT</span>
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        In the quiet rhythm of our days, love found its own light.
+                    </p>
+                    <div class="about-divider"></div>
+                    <p class="about-description">
+                        This page is about my love for you — for almost eight months, we've walked side by side, and in that time, I've never felt so deeply seen, so genuinely cherished.
+                    </p>
+                    <p class="about-description">
+                        Our story is more than moments; it's a masterpiece painted with laughter, patience, and the kind of warmth that lingers even in silence. You've become my favorite part of every day — the calm in the chaos, the spark in the ordinary, and the reason I believe in something lasting.
+                    </p>
+                    <p class="about-description">
+                        This website stands as a reflection of that love — a space built to showcase my heart, my memories, and my devotion to you, my lovie. Every word, every image, every detail here exists to honor what we've shared and what we continue to build together.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="assets/us/us1.jpg" alt="Our special moment together" class="about-photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="hobbies">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">02</span>
+                <span class="title-text">HOBBIES</span>
+            </h2>
+            <div class="hobbies-content">
+                <p class="hobbies-intro">
+                    The things that bring joy and meaning to my everyday life.
+                </p>
+                <div class="hobbies-divider"></div>
+                <div class="hobbies-grid">
+                    <div class="hobby-item">
+                        <div class="hobby-icon"><i class="fas fa-book"></i></div>
+                        <h3 class="hobby-name">Reading</h3>
+                        <p class="hobby-description">Getting lost in stories and expanding my perspective through books.</p>
+                    </div>
+                    <div class="hobby-item hobby-clickable" data-hobby="music">
+                        <div class="hobby-icon"><i class="fas fa-music"></i></div>
+                        <h3 class="hobby-name">Music</h3>
+                        <p class="hobby-description">Discovering new sounds and melodies that speak to my soul.</p>
+                    </div>
+                    <div class="hobby-item hobby-clickable" data-hobby="cinema">
+                        <div class="hobby-icon"><i class="fas fa-film"></i></div>
+                        <h3 class="hobby-name">Cinema</h3>
+                        <p class="hobby-description">Appreciating the art of storytelling through film.</p>
+                    </div>
+                    <div class="hobby-item hobby-clickable" data-hobby="travel">
+                        <div class="hobby-icon"><i class="fas fa-plane"></i></div>
+                        <h3 class="hobby-name">Travel</h3>
+                        <p class="hobby-description">Exploring new places and experiencing different cultures.</p>
+                    </div>
+                    <div class="hobby-item">
+                        <div class="hobby-icon"><i class="fas fa-camera"></i></div>
+                        <h3 class="hobby-name">Photography</h3>
+                        <p class="hobby-description">Capturing moments and finding beauty in the ordinary.</p>
+                    </div>
+                    <div class="hobby-item">
+                        <div class="hobby-icon"><i class="fas fa-coffee"></i></div>
+                        <h3 class="hobby-name">Coffee</h3>
+                        <p class="hobby-description">Exploring different coffee cultures and brewing methods.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Addiction Section - Car Slider -->
+    <section id="addiction" class="addiction">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">03</span>
+                <span class="title-text">ADDICTION</span>
+            </h2>
+            <p class="addiction-intro">My passion for black Supras - The ultimate automotive icon</p>
+            <div class="car-slider-container">
+                <!-- Left Content Area -->
+                <div class="car-content-area">
+                    <div class="car-content-main">
+                        <h3 class="car-main-title" id="car-main-title">MK4 Supra</h3>
+                        <p class="car-main-description" id="car-main-description">
+                            The legendary twin-turbo inline-six powerhouse. An icon of 90s Japanese engineering that continues to captivate car enthusiasts worldwide. Pure performance wrapped in timeless design.
+                        </p>
+                        <div class="car-action-buttons">
+                            <button id="readme-btn" class="car-btn car-btn-primary">Read Me</button>
+                            <button id="message-btn" class="car-btn car-btn-secondary">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                Message
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Thumbnail Row -->
+                    <div class="car-thumbnails" id="car-thumbnails">
+                        <div class="car-thumb active" data-slide="0">
+                            <div class="car-thumb-image car-thumb-1"></div>
+                        </div>
+                        <div class="car-thumb" data-slide="1">
+                            <div class="car-thumb-image car-thumb-2"></div>
+                        </div>
+                        <div class="car-thumb" data-slide="2">
+                            <div class="car-thumb-image car-thumb-3"></div>
+                        </div>
+                        <div class="car-thumb" data-slide="3">
+                            <div class="car-thumb-image car-thumb-4"></div>
+                        </div>
+                        <div class="car-thumb" data-slide="4">
+                            <div class="car-thumb-image car-thumb-5"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Image Slider -->
+                <div class="car-slider-wrapper">
+                    <div class="car-slider" id="car-slider">
+                        <div class="car-slide active">
+                            <div class="car-image car-1">
+                            </div>
+                        </div>
+                        <div class="car-slide">
+                            <div class="car-image car-2">
+                            </div>
+                        </div>
+                        <div class="car-slide">
+                            <div class="car-image car-3">
+                            </div>
+                        </div>
+                        <div class="car-slide">
+                            <div class="car-image car-4">
+                            </div>
+                        </div>
+                        <div class="car-slide">
+                            <div class="car-image car-5">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Navigation Arrows on Image -->
+                    <button class="car-nav-arrow car-nav-prev" id="prev-btn" aria-label="Previous">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 18l-6-6 6-6"/>
+                        </svg>
+                    </button>
+                    <button class="car-nav-arrow car-nav-next" id="next-btn" aria-label="Next">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 18l6-6-6-6"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Places Section -->
+    <section id="places" class="places">
+        <!-- Cathedral Hero Image -->
+        <div class="cathedral-hero">
+            <div class="cathedral-hero-image"></div>
+            <div class="cathedral-hero-overlay"></div>
+            <div class="cathedral-hero-content">
+                <h2 class="cathedral-hero-title">Sacred Architecture</h2>
+                <p class="cathedral-hero-subtitle">Gothic masterpieces that transcend time</p>
+            </div>
+        </div>
+        
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">04</span>
+                <span class="title-text">PLACES</span>
+            </h2>
+            <p class="places-intro">
+                The destinations that have shaped my journey
+            </p>
+            <div class="places-divider"></div>
+            <div class="places-grid">
+                <!-- French Cathedrals -->
+                <div class="place-item">
+                    <div class="place-image place-cathedral-1">
+                    </div>
+                    <div class="place-content">
+                        <h3 class="place-name">Notre-Dame de Paris</h3>
+                        <p class="place-description">The iconic Gothic cathedral in the heart of Paris, a masterpiece of French architecture and history.</p>
+                    </div>
+                </div>
+                <div class="place-item">
+                    <div class="place-image place-cathedral-2">
+                    </div>
+                    <div class="place-content">
+                        <h3 class="place-name">Chartres Cathedral</h3>
+                        <p class="place-description">A magnificent example of French Gothic architecture, renowned for its stunning stained glass windows.</p>
+                    </div>
+                </div>
+                <div class="place-item">
+                    <div class="place-image place-cathedral-3">
+                    </div>
+                    <div class="place-content">
+                        <h3 class="place-name">Amiens Cathedral</h3>
+                        <p class="place-description">The largest Gothic cathedral in France, celebrated for its impressive height and architectural grandeur.</p>
+                    </div>
+                </div>
+                <div class="place-item">
+                    <div class="place-image place-cathedral-4">
+                    </div>
+                    <div class="place-content">
+                        <h3 class="place-name">Reims Cathedral</h3>
+                        <p class="place-description">The coronation cathedral of France, where most French kings were crowned, a symbol of royal power.</p>
+                    </div>
+                </div>
+                <div class="place-item">
+                    <div class="place-image place-cathedral-5">
+                    </div>
+                    <div class="place-content">
+                        <h3 class="place-name">Strasbourg Cathedral</h3>
+                        <p class="place-description">A stunning example of Gothic architecture in Alsace, famous for its intricate facade and astronomical clock.</p>
+                    </div>
+                </div>
+                <div class="place-item">
+                    <div class="place-image place-cathedral-6">
+                    </div>
+                    <div class="place-content">
+                        <h3 class="place-name">Beauvais Cathedral</h3>
+                        <p class="place-description">Home to the tallest Gothic choir ever built, a testament to medieval engineering ambition.</p>
+                    </div>
+                </div>
+                <div class="place-item">
+                    <div class="place-image place-cathedral-7">
+                    </div>
+                    <div class="place-content">
+                        <h3 class="place-name">Bourges Cathedral</h3>
+                        <p class="place-description">A masterpiece of High Gothic architecture, known for its harmonious proportions and beautiful stained glass.</p>
+                    </div>
+                </div>
+                <div class="place-item">
+                    <div class="place-image place-cathedral-8">
+                    </div>
+                    <div class="place-content">
+                        <h3 class="place-name">Rouen Cathedral</h3>
+                        <p class="place-description">The cathedral of Normandy, immortalized by Monet's paintings, showcasing Flamboyant Gothic style.</p>
+                    </div>
+                </div>
+                <div class="place-item">
+                    <div class="place-image place-cathedral-9">
+                    </div>
+                    <div class="place-content">
+                        <h3 class="place-name">Laon Cathedral</h3>
+                        <p class="place-description">An early Gothic cathedral with distinctive towers, representing the transition to High Gothic architecture.</p>
+                    </div>
+                </div>
+                <div class="place-item">
+                    <div class="place-image place-cathedral-10">
+                    </div>
+                    <div class="place-content">
+                        <h3 class="place-name">Saint-Denis Basilica</h3>
+                        <p class="place-description">The first truly Gothic building, the burial place of French kings and a revolutionary architectural achievement.</p>
+                    </div>
+                </div>
+                <!-- English Cathedrals -->
+                <div class="place-item">
+                    <div class="place-image place-cathedral-11">
+                    </div>
+                    <div class="place-content">
+                        <h3 class="place-name">Westminster Abbey</h3>
+                        <p class="place-description">A historic Gothic abbey in London, where kings and queens have been crowned and buried for centuries.</p>
+                    </div>
+                </div>
+                <div class="place-item">
+                    <div class="place-image place-cathedral-12">
+                    </div>
+                    <div class="place-content">
+                        <h3 class="place-name">York Minster</h3>
+                        <p class="place-description">One of the largest Gothic cathedrals in Northern Europe, a breathtaking symbol of medieval craftsmanship.</p>
+                    </div>
+                </div>
+                <div class="place-item">
+                    <div class="place-image place-cathedral-13">
+                    </div>
+                    <div class="place-content">
+                        <h3 class="place-name">Canterbury Cathedral</h3>
+                        <p class="place-description">The mother church of the Anglican Communion and a UNESCO World Heritage site, rich in English history.</p>
+                    </div>
+                </div>
+                <div class="place-item">
+                    <div class="place-image place-cathedral-14">
+                    </div>
+                    <div class="place-content">
+                        <h3 class="place-name">Salisbury Cathedral</h3>
+                        <p class="place-description">Home to the tallest spire in the UK and housing one of the four surviving copies of the Magna Carta.</p>
+                    </div>
+                </div>
+                <div class="place-item">
+                    <div class="place-image place-cathedral-15">
+                    </div>
+                    <div class="place-content">
+                        <h3 class="place-name">Durham Cathedral</h3>
+                        <p class="place-description">A stunning example of Romanesque-Gothic transition, a UNESCO World Heritage site with remarkable Norman architecture.</p>
+                    </div>
+                </div>
+                <div class="place-item">
+                    <div class="place-image place-cathedral-16">
+                    </div>
+                    <div class="place-content">
+                        <h3 class="place-name">Lincoln Cathedral</h3>
+                        <p class="place-description">Once the tallest building in the world, showcasing magnificent English Gothic architecture and craftsmanship.</p>
+                    </div>
+                </div>
+                <div class="place-item">
+                    <div class="place-image place-cathedral-17">
+                    </div>
+                    <div class="place-content">
+                        <h3 class="place-name">Gloucester Cathedral</h3>
+                        <p class="place-description">A masterpiece of Perpendicular Gothic style, famous for its stunning fan vaulting and medieval architecture.</p>
+                    </div>
+                </div>
+                <div class="place-item">
+                    <div class="place-image place-cathedral-18">
+                    </div>
+                    <div class="place-content">
+                        <h3 class="place-name">Winchester Cathedral</h3>
+                        <p class="place-description">One of the largest cathedrals in Europe, with the longest nave and a rich history spanning over a millennium.</p>
+                    </div>
+                </div>
+                <div class="place-item">
+                    <div class="place-image place-cathedral-19">
+                    </div>
+                    <div class="place-content">
+                        <h3 class="place-name">Cologne Cathedral</h3>
+                        <p class="place-description">A magnificent Gothic cathedral in Germany, one of the largest cathedrals in Europe and a UNESCO World Heritage site.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">&copy; 2024 Personal Diary. All rights reserved.</p>
+                <p class="footer-text">A journey through life</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Gallery Modal -->
+    <div id="gallery-modal" class="gallery-modal">
+        <div class="gallery-modal-content">
+            <span class="gallery-close">&times;</span>
+            <h2 class="gallery-title" id="gallery-title"></h2>
+            <div class="gallery-grid" id="gallery-grid"></div>
+        </div>
+    </div>
+    <!-- Read Me Modal -->
+    <div id="readme-modal" class="app-modal" aria-hidden="true">
+        <div class="app-modal-content" role="dialog" aria-labelledby="readme-title" aria-modal="true">
+            <button class="app-close" aria-label="Close">&times;</button>
+            <h3 id="readme-title" class="app-modal-title">context of this Web-app</h3>
+            <div class="app-modal-body">
+                <p>Alam mo… ngayon ko lang narealize na hindi ko pa pala nasasabi sa’yo kung bakit ko ginawa ‘yung second version ng website. As in, I’ve been meaning to tell you that for the longest time pero lagi kong nakakalimutan, or maybe… I just didn’t know how to say it properly. Kasi it’s not just about making a new version — it’s something a bit deeper for me.</p>
+                <p>Noong una kong ginawa ‘yung website, honestly, I was just excited. Gusto ko lang may maipakita, may ma-post, may magawa. Pero habang tumatagal, parang naramdaman ko na hindi ko pa talaga siya naipapakita nang buo — ‘yung meaning, ‘yung emotion, ‘yung “why” behind everything. So ayun, gumawa ako ng second version. Pero this time, iba na ‘yung approach ko. Hindi na lang siya basta project.</p>
+                <p>Ginawa ko siya kasi gusto kong gawing mas personal. Mas may kwento. Mas may “ako” sa bawat parte. ‘Yung first one, parang surface lang — maganda, maayos, pero kulang. ‘Yung second one… parang reflection na ng lahat ng nangyari, lahat ng natutunan, lahat ng pinagdaanan ko habang ginagawa ko ‘yung una.</p>
+                <p>Habang inaayos ko siya, parang nagre-reminisce ako. Naalala ko ‘yung mga gabi na antok na antok na ako pero gusto ko pa ring mag-code kasi excited ako sa next detail. Naalala ko rin ‘yung mga times na napapaisip ako, “ano bang gusto kong iparating dito?” Tapos every time na may nafi-fix ako, or may part na finally gumagana, parang may little spark of happiness — ‘yung tipong simpleng bagay pero fulfilling.</p>
+                <p>Pero beyond the technical side, gusto ko talaga siyang gawing emotional space. ‘Yung tipo na kapag binisita mo, hindi lang siya website — mararamdaman mo na may puso siya. Every color, every animation, bawat placement ng text — pinag-isipan ko nang matagal kasi gusto kong bawat element may meaning. Parang diary, pero digital.</p>
+                <p>And maybe that’s why it took me a while to talk about it. Kasi to be honest, it’s so personal. Hindi siya something na basta ko lang ginawa kasi bored ako o gusto kong magpakitang-gilas. Ginawa ko siya kasi gusto kong ipakita kung nasaan na ako ngayon. Na hindi ko na lang basta ginagawa ‘to for aesthetics — ginagawa ko siya kasi it represents growth, patience, and everything I learned in between.</p>
+                <p>Kaya kapag tinignan mo ‘yung second version, mapapansin mong mas calm siya. Mas minimalist, pero mas may depth. Mas simple, pero mas may meaning. Kasi this time, I built it slowly — not just with my hands, but with my heart.</p>
+                <p>And maybe, part of the reason why it’s so special is because habang ginagawa ko siya, naaalala ko rin lahat ng mga tao, mga memories, at mga bagay na naging parte ng journey ko. ‘Yung mga nagbigay sa’kin ng inspiration kahit hindi nila alam. Parang each page, may maliit na memory na nakatago.</p>
+                <p>So ayun, that’s the real reason why I made the second version. It’s not just a redesign. It’s a love letter — to growth, to change, and to every version of myself that helped me get here. Maybe that’s why it feels softer. Kasi this time, it’s not just code. It’s me — in every sense of the word.</p>
+                <p>Hindi ko man nasabi agad, pero ayun, ngayon mo na alam. It’s special because it’s a quiet reminder na minsan, kailangan natin mag-start ulit — hindi para burahin ‘yung dati, pero para mas maipakita kung sino na tayo ngayon.</p>
+                <p>So yeah, the second version isn’t just a project. It’s a piece of me. And honestly… I’m proud of it.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Message Modal with Interactive Envelope -->
+    <div id="message-modal" class="app-modal" aria-hidden="true">
+        <div class="app-modal-content message-content" role="dialog" aria-modal="true">
+            <button class="app-close" aria-label="Close">&times;</button>
+            <!-- Envelope removed to avoid duplicate content in Message modal -->
+
+            <!-- Expandable Card Version -->
+            <div class="expand-card" id="love-expand-card">
+                <div class="expand-header" role="button" aria-expanded="false" tabindex="0">
+                    <span class="expand-title">To my Love, My Greatest TOTGA</span>
+                    <svg class="expand-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+                <div class="expand-content">
+                    <div class="expand-inner">
+                        <p>Alam mo, matagal ko na talaga gustong sabihin ‘to. Hindi ko lang alam kung paano sisimulan kasi ang dami kong gustong ipaliwanag, pero parang laging kulang ‘yung mga salita. Pero siguro, ito na ‘yung tamang pagkakataon.</p>
+                        <p>Gusto ko lang sabihin na… I’m genuinely sorry. As in, totoo. Alam kong naging sobrang busy ako lately — lalo na sa acads. Parang araw-araw may kailangang habulin, may deadline, may project, may presentation. Hanggang sa unti-unti, hindi ko na namalayan na ang dami ko na palang na-mi-miss. Hindi lang mga events, kundi mga moments na importante rin — lalo na sa atin.</p>
+                        <p>Dumating sa point na halos lahat nagkasabay-sabay. Sobrang daming nangyayari, tapos ako, pilit kong inaayos lahat, pero habang ginagawa ko ‘yon, unti-unti kong naramdaman na may mga bagay din akong hindi ko na nabibigyan ng oras — ikaw, tayo.</p>
+                        <p>And that hurts, kasi habang pinipilit kong maging okay sa lahat, nakalimutan kong ipakita ‘yung pinaka-simple pero pinaka-mahalagang bagay — na I still care. Hindi ko man nasabi lagi, hindi ko man naiparamdam sa actions ko recently, pero totoo ‘yon. Na kahit gaano ako ka-busy, kahit gaano ka-gulo lahat, lagi kong naiisip ‘yung mga araw na simple lang tayo, na masaya lang kahit walang okasyon.</p>
+                        <p>And maybe, eto na nga ‘yung proof. Kasi kung hindi talaga ako nag-care, kung wala talagang halaga sa’kin, hindi ko sana pinilit gawin ‘to — ‘tong maliit na bagay na ‘to, na kahit simpleng effort lang, gusto kong maging paraan para ipakita na I still mean what I said before. Na hindi ko lang basta sinabi na “I care.” Ginawa ko rin. Kasi this wouldn’t even exist if I didn’t.</p>
+                        <p>Na kahit ilang monthsary pa ‘yung na-miss ko, kahit ilang special days ‘yung lumipas na wala akong nasabi, alam mo, sa bawat araw na ‘yon, nandun pa rin ‘yung thought — na gusto kong bumawi, gusto kong may gawin, gusto kong ipakita somehow na hindi ko kinalimutan, kahit minsan parang ganun ang lumabas.</p>
+                        <p>Pero ayun nga, nakakalungkot lang kasi umabot tayo sa dulo na hindi ko inakala. Hindi ko in-expect na ganun kabilis lahat. Na ‘yung mga araw na akala ko, may time pa, biglang nawala lang. Parang kahapon lang nag-aayos pa ako ng plan para sa next monthsary, tapos ngayon, parang memories na lang lahat.</p>
+                        <p>Hindi ko rin alam kung paano nangyari nang ganun kabilis. Ang dami pang gusto kong sabihin, ang dami pang gusto kong ayusin, pero bigla na lang… wala na. Siguro ganun talaga minsan — life just happens, and we’re caught in between trying to survive and trying to hold on. And maybe I failed at that part — kasi I got too caught up with everything, and I forgot to make you feel that you still mattered.</p>
+                        <p>Pero totoo, you did. And you still do, in ways na baka hindi mo na nararamdaman ngayon, pero totoo pa rin sa’kin. Kaya siguro kahit tapos na, kahit ang dami nang nangyari, gusto ko pa ring iwan itong mensaheng ‘to bilang proof. Proof na I cared. Proof na I didn’t forget. Proof na kahit nawala na tayo, hindi ko hinayaang mawala ‘yung meaning ng lahat ng pinagdaanan natin.</p>
+                        <p>Ang ironic nga eh — kasi ginawa ko ‘to sa mga panahong busy ako, sa panahong parang hindi ko na kaya. Pero siguro ‘yun nga ‘yung pinaka-point: kahit pagod, kahit sabog na ‘yung schedule, gusto ko pa rin may magpapatunay na importante ka pa rin sa’kin.</p>
+                        <p>So ayun… maybe this is my quiet way of saying sorry — not for what happened, but for what I failed to show. And thank you — kasi kahit sandali, naging parte ka ng mga araw ko. Ang bilis lang ng lahat, no? Parang isang iglap, tapos na. Pero kahit ganun, lahat ng memories, lahat ng effort, lahat ng “us” — hindi ko kakalimutan.</p>
+                        <p>And maybe one day, when I look back, ito ‘yung maaalala ko: that I cared so much, I even made something out of it — kahit huli na. I hope you finally find the peace that eluded you, both in my presence and in my absence. Goodluck my love, my TOTGA, My beautiful moon.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
+

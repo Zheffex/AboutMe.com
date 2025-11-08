@@ -1,0 +1,19 @@
+{
+  "name": "letter-for-my-love",
+  "version": "1.0.0",
+  "description": "A beautiful website for my love",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "python -m http.server 8000",
+    "dev": "python -m http.server 8000"
+  },
+  "keywords": [
+    "love",
+    "website",
+    "personal",
+    "romantic"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
